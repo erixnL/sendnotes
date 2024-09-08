@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for sendnotes-aged-cherry-7480 on 2024-08-18T16:43:24+10:00
+# fly.toml app configuration file generated for sendnotes-still-tree-4968 on 2024-09-08T15:21:31+10:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'sendnotes-aged-cherry-7480'
+app = 'sendnotes-still-tree-4968'
 primary_region = 'syd'
 console_command = 'php /var/www/html/artisan tinker'
 
@@ -14,7 +14,7 @@ console_command = 'php /var/www/html/artisan tinker'
 
 [env]
   APP_ENV = 'production'
-  APP_URL = 'https://sendnotes-aged-cherry-7480.fly.dev/'
+  APP_URL = 'https://sendnotes-still-tree-4968.fly.dev'
   LOG_CHANNEL = 'stderr'
   LOG_LEVEL = 'info'
   LOG_STDERR_FORMATTER = 'Monolog\Formatter\JsonFormatter'
@@ -28,10 +28,6 @@ console_command = 'php /var/www/html/artisan tinker'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
-
-[deploy]
-  release_command = "php /var/www/html/artisan migrate --force"
-
 
 [[vm]]
   memory = '1gb'
